@@ -1,3 +1,5 @@
-DROP DATABASE IF EXISTS strains_db;
+DROP DATABASE IF EXISTS unpuffd_db;
 
-CREATE DATABASE strains_db;
+CREATE DATABASE unpuffd_db;
+
+USE unpuffd_db;
