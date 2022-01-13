@@ -7,35 +7,55 @@ const Usage = require('./Usage');
 const User = require('./User');
 
 // User hasMany Reviews
-User.hasMany(Review, {
-    foreignKey: 'user_id',
-});
+// User.hasMany(Review, {
+//     foreignKey: 'user_id',
+// });
 
-Review.belongsTo(User, {
-    foreignKey: 'user_id',
-    onDelete: 'CASCADE'
-});
+// Review.belongsTo(User, {
+//     foreignKey: 'user_id',
+//     onDelete: 'CASCADE'
+// });
 
 // Strain hasMany Reviews
-Strain.hasMany(Review, {
-    foreignKey: 'strain_id',
-    onDelete: 'CASCADE'
-});
+// Strain.hasMany(Review, {
+//     foreignKey: 'strain_id',
+//     onDelete: 'CASCADE'
+// });
 
-Review.belongsTo(Strain, {
-    foreignKey: 'strain_id',
-    onDelete: 'CASCADE'
-});
+// Review.belongsTo(Strain, {
+//     foreignKey: 'strain_id',
+//     // onDelete: 'CASCADE'
+// });
 
 // Review hasOne Strain
-Review.hasOne(Strain, {
-    foreignKey: 'review_id',
-    onDelete: 'CASCADE',
-});
+// Review.hasOne(Strain, {
+//     foreignKey: 'review_id',
+//     onDelete: 'CASCADE',
+// });
 
-Strain.belongsTo(Review, {
-    foreignKey: 'review_id',
-});
+// Strain.belongsTo(Review, {
+//     foreignKey: 'review_id',
+// });
+
+User.belongsToMany(Strain, {
+    // Define the third table needed to store the foreign keys
+    through: {
+      model: Review,
+      unique: false
+    },
+    // Define an alias for when data is retrieved
+    as: 'user_strains'
+  });
+  
+  Strain.belongsToMany(User, {
+    // Define the third table needed to store the foreign keys
+    through: {
+      model: Review,
+      unique: false
+    },
+    // Define an alias for when data is retrieved
+    as: 'strain_users'
+  });
 
 // StrainType hasOne Strain
 StrainType.hasOne(Strain, {
