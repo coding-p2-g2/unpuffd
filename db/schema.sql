@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS strains_db;
+
+CREATE DATABASE strains_db;
