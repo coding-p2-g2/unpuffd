@@ -13,18 +13,19 @@ const User = require('./User');
 
 // Review.belongsTo(User, {
 //     foreignKey: 'user_id',
-//     onDelete: 'CASCADE'
+//     // onDelete: 'CASCADE'
 // });
 
-// Strain hasMany Reviews
+// // Strain hasMany Reviews
 // Strain.hasMany(Review, {
 //     foreignKey: 'strain_id',
-//     onDelete: 'CASCADE'
+//     // onDelete: 'CASCADE',
+//     // constraints: false
 // });
 
 // Review.belongsTo(Strain, {
 //     foreignKey: 'strain_id',
-//     // onDelete: 'CASCADE'
+//     // constraints: false
 // });
 
 // Review hasOne Strain
@@ -40,22 +41,24 @@ const User = require('./User');
 User.belongsToMany(Strain, {
     // Define the third table needed to store the foreign keys
     through: {
-      model: Review,
-      unique: false
+        model: Review,
+        unique: false,
+        // constraints: false
     },
     // Define an alias for when data is retrieved
     as: 'user_strains'
-  });
-  
-  Strain.belongsToMany(User, {
+});
+
+Strain.belongsToMany(User, {
     // Define the third table needed to store the foreign keys
     through: {
-      model: Review,
-      unique: false
+        model: Review,
+        unique: false,
+        // constraints: false
     },
     // Define an alias for when data is retrieved
-    as: 'strain_users'
-  });
+    as: 'user_strains'
+});
 
 // StrainType hasOne Strain
 StrainType.hasOne(Strain, {

@@ -1,29 +1,29 @@
 const sequelize = require('../config/connection');
-const seedAroma = require('./Aroma');
-const seedEffect = require('./Effect');
-const seedReview = require('./Review');
-const seedStrain = require('./Strain');
-const seedStrainType = require('./StrainType');
-const seedUsage = require('./Usage');
-const seedUser = require('./User');
+const seedAroma = require('./aromaData');
+const seedEffect = require('./effectData');
+const seedReview = require('./reviewData');
+const seedStrain = require('./strainData');
+const seedStrainType = require('./strainTypeData');
+const seedUsage = require('./usageData');
+const seedUser = require('./userData');
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
 
+  await seedUser();
+
   await seedAroma();
 
   await seedEffect();
-
-  await seedReview();
+  
+  await seedStrainType();
+  
+  await seedUsage();
 
   await seedStrain();
 
-  await seedStrainType();
-
-  await seedUsage();
-
-  await seedUser();
-
+  await seedReview();
+  
   process.exit(0);
 };
 
