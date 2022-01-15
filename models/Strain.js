@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Strain extends Model {}
+class Strain extends Model { }
 
 Strain.init(
   {
@@ -14,28 +14,29 @@ Strain.init(
     strain_name: {
       type: DataTypes.STRING,
       allowNull: false,
-    }, 
+    },
     description: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    }, 
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     thc_level: {
-        type: DataTypes.STRING,
-        allowNull: false,
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     strain_type_id: {
       type: DataTypes.INTEGER,
-        references: {
-          model: 'strain_type',
-          key: 'id',
+      references: {
+        model: 'strain_type',
+        key: 'id',
+      },
     },
     effect_id: {
-        type: DataTypes.INTEGER,
-        references: {
-          model: 'effect',
-          key: 'id',
-        },
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'effect',
+        key: 'id',
       },
+    },
     usage_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -44,12 +45,12 @@ Strain.init(
       },
     },
     aroma_id: {
-        type: DataTypes.INTEGER,
-        references: {
-          model: 'aroma',
-          key: 'id',
-        },
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'aroma',
+        key: 'id',
       },
+    },
     review_id: {
       type: DataTypes.INTEGER,
       references: {
