@@ -23,6 +23,12 @@ Strain.init(
         type: DataTypes.STRING,
         allowNull: false,
     },
+    strain_type_id: {
+      type: DataTypes.INTEGER,
+        references: {
+          model: 'strain_type',
+          key: 'id',
+    },
     effect_id: {
         type: DataTypes.INTEGER,
         references: {
