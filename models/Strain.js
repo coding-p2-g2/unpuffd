@@ -16,7 +16,7 @@ Strain.init(
       allowNull: false,
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     thc_level: {
@@ -51,16 +51,10 @@ Strain.init(
         key: 'id',
       },
     },
-    review_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'review',
-        key: 'id',
-      },
-    },
   },
   {
     sequelize,
+    timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'strain',

@@ -23,5 +23,6 @@ const aromaData = [
 ];
 
 const seedAroma = () => Aroma.bulkCreate(aromaData);
+console.log("aroma seed complete")
 
 module.exports = seedAroma;
