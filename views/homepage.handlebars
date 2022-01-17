@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Unpuffd</title>
-</head>
-<body>
-   <header>
-       {{#if over_21}} 
-       <h1>UnPuffd</h1>
-        <div>
-           <nav>
-               <ul>
-                   <li><a class="login" href="/login">Login/Signup</a></li>
-                    {{#if logged_in}}
-                    <li><a class="reviews" href="/myreviews">My Reviews</a></li>
-                   <li><a class="dashboard" href="/dashboard">Dashboard</a></li>
-                   <li><a class="logout" href="/logout">Logout</a></li>
-                   {{else}}
-                   <li><a class="login" href="/login">Login/Signup</a></li>
-                   {{/if}}
-               </ul>
-           </nav>
-       </div>  
-       {{/if}}
-   </header>
-    <main>
-        <div class="welcome-box">
-        <h3>WELCOME TO UNPUFFD</h3>
-        <p><small>Please login or sign up.</small></p>
-    </div>
-      {{{ body }}} 
-    </main>
-    <footer>
-      
-    </footer>
-   {{#if logged_in}} 
-   <script src="../../public/js/logout.js"></script>
-   {{/if}} 
-</body>
-</html>
+<div class="welcome-box">
+    <h3>WELCOME TO UNPUFFD</h3>
+    <p><small>Please login or sign up.</small></p>
+</div>

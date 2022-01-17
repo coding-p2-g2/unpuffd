@@ -9,12 +9,10 @@
 </head>
 <body>
    <header>
-       {{#if over_21}} 
        <h1>UnPuffd</h1>
         <div>
            <nav>
                <ul>
-                   <li><a class="login" href="/login">Login/Signup</a></li>
                     {{#if logged_in}}
                     <li><a class="reviews" href="/myreviews">My Reviews</a></li>
                    <li><a class="dashboard" href="/dashboard">Dashboard</a></li>
@@ -24,23 +22,10 @@
                    {{/if}}
                </ul>
            </nav>
-       </div>  
-       {{/if}}
+       </div>
    </header>
     <main>
-        <div class="box">
-            <h3>Age Verification</h3>
-            <p>By clicking enter, I certify that I am over the age of 21.</p>
-            
-            <a href="#" class="btn btn-alpha"  id="refresh-page">ENTER</a>
-            
-            <p class="decor-line"><span>Or</span></p>
-            
-            <a href="#" class="btn btn-beta" id="reset-session">EXIT</a>
-            
-            <p class="decor-line"><span>Always enjoy responsibily.</span></p>
-          </div>
-      {{{ body }}}
+        {{{ body }}}
     </main>
     <footer>
       
