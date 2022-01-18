@@ -23,6 +23,10 @@ Strain.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    img: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     strain_type_id: {
       type: DataTypes.INTEGER,
       references: {
