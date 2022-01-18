@@ -8,7 +8,7 @@ router.get('/', withAuth, (req, res) => {
       attributes: [
         'id',
         'strain_name',
-        // 'img',
+        'img',
       ],
     })
       .then(strainData => {
@@ -24,4 +24,5 @@ router.get('/', withAuth, (req, res) => {
       });
   });
 
+  
   module.exports = router;

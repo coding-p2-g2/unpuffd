@@ -1,0 +1,12 @@
+{{#if logged_in}}
+<div>
+    <h2>{{strain.strain_name}}</h2>
+    <p>{{strain.description}}</p>
+    <p>{{strain.usage.usage_name}}</p>
+    <p>{{strain.effect.effect_name}}</p>
+
+        {{#each strain as |strain|}}
+    <p>{{strain.user_strains.review.comment}}</p>
+    {{/each}}
+</div>
+{{/if}}
