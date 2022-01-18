@@ -1,4 +1,16 @@
-<div class="welcome-box">
-    <h3>WELCOME TO UNPUFFD</h3>
-    <p><small>Please login or sign up.</small></p>
+
+{{#if strains.length}}
+<div>
+    {{#each strains as |strain|}}
+    {{!-- {{> post-info post }} --}}
+    <section class="card">
+        <a href="/api/strains/{{id}}">
+            <header>{{strain_name}}</header>
+            <img href="{{img}}" alt="{{strain_name}}">
+        </a>
+    </section>
+    {{/each}}
 </div>
+{{/if}}
+
+
