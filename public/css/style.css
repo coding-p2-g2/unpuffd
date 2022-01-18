@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html {
+    font-family: helvetica;
+}
+
+header {
+    display: flex;
+    margin-bottom: 25px;
+    height: 50px;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+h1 {
+    color: rgb(120, 175, 113);
+    margin-left: 30px;
+    font-family: 'Pacifico', 'cursive';
+}
+
+nav ul {
+    list-style: none;
+    padding: 12px;
+    display: inline-flex;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(120, 175, 113);
+    background-color: white;
+    border: 2px solid #4CAF50; 
+    border-radius: 6px;
+    display: inline-flex;
+    float: right;
+    text-align: center;
+    padding: 5px 22px;
+
+}
+
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2021/08/26/13/48/plant-6576153_960_720.jpg");
+    background-size: cover;
+    height: 700px;
+}
+
+.box{
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 70%;
+    height: 40%;
+    border-radius: 2%;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    font-size: large;
+}
+
+.welcome-box{
+    background: transparent;
+    margin: 0 auto;
+    margin-top: 175px;
+    width: 70%;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    font-size: xx-large;
+}
+
+.box a {
+    border-radius: 6px;
+    padding: 20px;
+}
+a.btn{
+    background-color: rgb(120, 175, 113);
+    color: #fff;
+    text-decoration: none;
+    display:inline-block;
+    letter-spacing: 0.1em;
+    padding: 0.5em 0em;
+    width: 100px;
+    height:20px;
+}
+
+main {
+    align-content: center;
+    height: 60%;
+}
+.forms {
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    background-color: white;
+    margin-top: 100px;
+    width: 50%;
+    height: 80%;
+    border-radius: 2%;
+    color: black;
+    padding: 5%;
+    font-size: large;
+    text-align: center;
+} 
+
+form .form-group {
+    display: block;
+    width: 100%;
+    margin: 0.625rem 0;
+    text-align: left;
+  }
+
+  form .form-input {
+    width: 80%;
+    padding: 0.5rem;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    margin: auto;
+    font-size: 1rem;
+    border: 1px solid #484848;
+    border-radius: 0.3rem;
+  }
+
+  form .form-group .btn {
+    color: white;
+    background-color: #4CAF50;
+    border: 2px solid white; 
+    border-radius: 6px;
+    width: 60px;
+    height: 40px;
+  }
+
+  .strains {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    background-color: white;
+    margin-top: 100px;
+    width: 90%;
+    height: 90%;
+    color: black;
+    padding: 5%;
+    font-size: large;
+    text-align: center;
+  }
+
+  .card {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+  }
