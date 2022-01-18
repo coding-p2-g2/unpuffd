@@ -44,4 +44,38 @@ router.post('/login', (req, res) => {
     });
 });
 
+// user create/signup POST - http://localhost:3001/api/users/
+router.post('/', (req, res) => {
+    User.create({
+      username: req.body.username,
+      email: req.body.email,
+      password: req.body.password
+    })
+      .then(userData => {
+        req.session.save(() => {
+          req.session.user_id = userData.id;
+          req.session.username = userData.username;
+          req.session.email = userData.email;
+          req.session.logged_in = true;
+  
+          res.json(userData)
+        })
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
+
+  // user logout if logged in POST - http://localhost:3001/api/users/logout
+router.post('/logout', withAuth, (req, res) => {
+    if (req.session.logged_in) {
+      req.session.destroy(() => {
+        res.status(204).end();
+      });
+    } else {
+      res.status(404).end();
+    }
+  });
+
 module.exports = router;
