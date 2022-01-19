@@ -1,16 +1,19 @@
-
-{{#if strains.length}}
-<div>
+<div class="select-strain"><h2>SELECT ONE STRAIN TO VIEW REVIEWS</h2></div>
+<section class="container">
+    {{#if strains.length}}
     {{#each strains as |strain|}}
     {{!-- {{> post-info post }} --}}
     <section class="card">
         <a href="/api/strains/{{id}}">
             <header>{{strain_name}}</header>
-            <img href="{{img}}" alt="{{strain_name}}">
+            <div class="card-body"></div>
+            <img src="{{img}}" alt="{{strain_name}}">
+            </div>
         </a>
     </section>
     {{/each}}
-</div>
 {{/if}}
+</section>
+
 
 
