@@ -18,6 +18,7 @@ h1 {
     font-family: 'Pacifico', 'cursive';
 }
 
+
 nav ul {
     list-style: none;
     padding: 12px;
@@ -27,6 +28,7 @@ nav ul {
     right: 30px;
     justify-content: center;
     gap: 10px;
+    
 }
 
 nav ul li a {
@@ -135,26 +137,82 @@ form .form-group {
     height: 40px;
   }
 
-  .strains {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    display: flex;
-    height: 100%;
+  .card {
+    margin: 20px;
+    flex: 1 0 200px;
+    border-radius: 2%;
     background-color: white;
-    margin-top: 100px;
-    width: 90%;
-    height: 90%;
-    color: black;
-    padding: 5%;
-    font-size: large;
+    border: 1px solid #1a1a1a;
+    height: 275px;
+    margin-bottom:50px:
+  }
+
+  .card a {
+      text-decoration: none;
+  }
+
+  .card header {
+    text-transform: uppercase;
+    color: white;
+    background-color:rgb(120, 175, 113);
+    padding: 0.625rem;
+    border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+    font-size: medium;
+    justify-content: center;
+    height: 15px;
+  }
+
+
+  .card-body {
     text-align: center;
   }
 
-  .card {
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
+  .container {
+    width: 100%;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 200px;
+    border-radius: 2%;
+    overflow: auto;
+    height: 285px;
   }
+
+  img {
+    margin-left: 15px;
+    max-width: 90%;
+    max-height: 75%;
+    height: auto;
+    padding: 0;
+  }
+
+  .select-strain {
+        justify-content: center;
+        display: flex;
+        color: #4CAF50;
+        position: absolute;
+        top: 190px; 
+        margin: auto;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: white;
+        left: 0;
+        right: 0;
+        width: 500px;
+        border: 2px solid #4CAF50; 
+        border-radius: 6px;
+        height: 60px;
+  }
+
+
+
+ 
+   
+
+
+ 
+   
