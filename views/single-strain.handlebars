@@ -5,8 +5,11 @@
     <p>{{strain.usage.usage_name}}</p>
     <p>{{strain.effect.effect_name}}</p>
 
-        {{#each strain as |strain|}}
-    <p>{{strain.user_strains.review.comment}}</p>
+    {{#each strain.user_strains}}
+    <p>{{review.comment}}</p>
+    <p>{{review.rating}}</p>
     {{/each}}
 </div>
+
+<a class="reviews" href="/api/reviews/create">Leave a Review</a>
 {{/if}}
