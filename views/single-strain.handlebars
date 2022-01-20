@@ -1,15 +1,30 @@
-{{#if logged_in}}
-<div>
+<div class="strain-name">
     <h2>{{strain.strain_name}}</h2>
-    <p>{{strain.description}}</p>
-    <p>{{strain.usage.usage_name}}</p>
-    <p>{{strain.effect.effect_name}}</p>
-
-    {{#each strain.user_strains}}
-    <p>{{review.comment}}</p>
-    <p>{{review.rating}}</p>
-    {{/each}}
 </div>
+<section class="strain-container">
+    {{#if logged_in}}
+    <div class="strain-info">
+        <div class="strain-img">
+        <img src="{{strain.img}}" alt="{{strain.strain_name}}">
+        </div>
+        <div class="strain-text">
+            <p>THC Level: {{strain.thc_level}}</p>
+            <p>Strain Type: {{strain.strain_type.strain_name}}</p>
+            <p>Usage: {{strain.usage.usage_name}}</p>
+            <p>Effect: {{strain.effect.effect_name}}</p>
+            <p>Aroma: {{strain.aroma.aroma_name}}</p>
+        </div>
+        </div>
+        <div class="text">
+            <p>{{strain.description}}</p>
+        </div>
+        <div class="review">
+            {{#each strain.user_strains}}
+            <p>{{review.comment}}</p>
+            <p>{{review.rating}}</p>
+            {{/each}}
 
-<a class="reviews" href="/api/reviews/create">Leave a Review</a>
-{{/if}}
+            <a href="/api/reviews/create">Leave a Review</a>
+        </div>
+        {{/if}}
+</section>

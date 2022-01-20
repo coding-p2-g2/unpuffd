@@ -28,7 +28,6 @@ nav ul {
     right: 30px;
     justify-content: center;
     gap: 10px;
-    
 }
 
 nav ul li a {
@@ -47,8 +46,10 @@ nav ul li a {
 
 body {
     background-image: url("https://cdn.pixabay.com/photo/2021/08/26/13/48/plant-6576153_960_720.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    background-position: center;
+    /* height: 700px; */
 }
 
 .box{
@@ -92,7 +93,7 @@ a.btn{
 
 main {
     align-content: center;
-    height: 60%;
+    height: 100%;
 }
 .forms {
     justify-content: center;
@@ -102,7 +103,7 @@ main {
     background-color: white;
     margin-top: 100px;
     width: 50%;
-    height: 80%;
+    height: 50%;
     border-radius: 2%;
     color: black;
     padding: 5%;
@@ -138,13 +139,13 @@ form .form-group {
   }
 
   .card {
-    margin: 20px;
-    flex: 1 0 200px;
+    margin: 10px;
+    flex: 0 1 200px;
     border-radius: 2%;
     background-color: white;
     border: 1px solid #1a1a1a;
     height: 275px;
-    margin-bottom:50px;
+    margin-bottom:20px;
   }
 
   .card a {
@@ -172,14 +173,14 @@ form .form-group {
     max-width: 85%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0);
     padding: 50px;
     display: flex;
     flex-flow: row wrap;
-    margin-top: 200px;
+    margin-top: 150px;
     border-radius: 2%;
-    overflow: auto;
-    height: 285px;
+    justify-content: center;
+    max-height: 100%;
   }
 
   img {
@@ -190,29 +191,115 @@ form .form-group {
     padding: 0;
   }
 
+  .strain-img p {
+    top: 20px;
+  }
+
   .select-strain {
         justify-content: center;
         display: flex;
-        color: #4CAF50;
+        color: #52cb57;
         position: absolute;
         top: 190px; 
-        margin: auto;
-        font-weight: bold;
-        font-size: 15px;
-        background-color: white;
+        background-color: rgba(23, 22, 22, 0.178);
         left: 0;
         right: 0;
-        width: 500px;
-        border: 2px solid #4CAF50; 
-        border-radius: 6px;
-        height: 60px;
+  }
+  .strain-container {
+    background-color: white;
+    opacity: 80%;
+    margin-top: 220px;
+    color: black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    max-height: 100%;
+    flex-direction: column;
   }
 
+  .strain-info {
+    display: flex;
+  }
 
+  .strain-img {
+    flex: 1;
+    order: 1;
+  }
 
- 
+  .strain-text {
+    flex: 2;
+    order: 2;
+    margin-top: 10px;
+    font-size: large;
+  }
+
+  .text {
+    font-size: large;
+    margin: 20px;
+    top:0;
+    /* float: right; */
+  }
+
+ footer {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+
+  .strain-name {
+    justify-content: center;
+        display: flex;
+        color: #52cb57;
+        position: absolute;
+        top: 190px; 
+        background-color: rgba(23, 22, 22, 0.178);
+        left: 0;
+        right: 0;
+  }
+  
+  .review {
+    flex-direction: column;
+  }
+
+  @media (max-width: 960px) {
+
+    nav ul {
+      display: flex;
+     }
+     nav ul li a {
+      /* text-decoration: none; */
+      font-size: 10px;
+      color: rgb(120, 175, 113);
+      background-color: white;
+      border: 2px solid #4CAF50; 
+      border-radius: 6px;
+      display: block;
+      /* float: right; */
+      text-align: center;
+      padding: 5px 22px;
+    }
+
+    .forms {
+      display: block;
+      height: 80%;
+      width: 60%;
+    }
+    .select-strain {
+      font-size: 10px;
+}
+
+.strain-container {
+  flex-direction: column;
+}
+  }
    
-
-
- 
    
