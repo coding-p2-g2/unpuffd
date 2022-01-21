@@ -18,15 +18,30 @@
     <div class="text">
         <p>{{strain.description}}</p>
     </div>
-    <div class="review">
+    <div class="review-section">
+        <h2>Recent Reviews</h2>
         {{#each strain.user_strains}}
+        <div class="reivew-card">
+            <div class="review-header">
+                  <h3>{{username}}</h3>
+            </div>
+            <div class="review-body">
+                  <p>Rating: {{review.rating}}</p>
+                  <p>{{review.comment}}</p>
+                  <p>Created on {{format_date review.date_created}}</p>
+            </div>
+            <hr>
+        {{!-- <div class="review">
         <p>{{review.comment}}</p>
         <p>{{review.rating}}</p>
+        <p>{{username}}</p>
+        <small class="text-muted">Created on {{format_date review.date_created}}</small>
+        </div> --}}
         {{/each}}
 
         {{!-- <a href="/api/reviews/create">Leave a Review</a> --}}
     </div>
-</section>
+     </section>
 <div>
         <div class="row forms">
             <div class="col-md-6">
