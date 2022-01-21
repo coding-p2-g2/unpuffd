@@ -18,6 +18,14 @@ router.get('/homepage', (req, res) => {
     res.render('homepage');
 });
 
+router.get('/exit', (req, res) => {
+    if (req.session.logged_in) {
+        res.redirect('/dashboard');
+        return;
+    }
+    res.render('exit');
+});
+
 router.get('/login', (req, res) => {
     if (req.session.logged_in) {
         res.redirect('/dashboard');
