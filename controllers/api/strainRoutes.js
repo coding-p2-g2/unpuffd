@@ -33,7 +33,12 @@ router.get('/:id', withAuth, (req, res) => {
             attributes: ['aroma_name']
         }, 
         {
-          model: User, through: Review, as: 'user_strains'
+          model: User, through: Review, as: 'user_strains',
+          include: [
+            {
+              model: Strain, through: Review, as: 'user_strains',
+            },
+          ]
         }
       ]
     })
