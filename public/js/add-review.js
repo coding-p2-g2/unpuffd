@@ -1,9 +1,10 @@
 async function newPostFormHandler(event) {
     event.preventDefault();
 
-    const strain_id = document.querySelector('#strain').value.trim();
     const rating = document.querySelector('#rating').value.trim();
     const comment = document.querySelector('#comment').value.trim();
+    const strain_id = window.location.toString().split('/')[
+        window.location.toString().split('/').length - 1];
 
     if (strain_id && rating && comment) {
         const response = await fetch(`/api/reviews`, {
@@ -13,7 +14,7 @@ async function newPostFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/api/reviews/');
+            document.location.reload();
         } else {
             alert('Failed to post!');
         }

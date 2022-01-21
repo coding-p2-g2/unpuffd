@@ -5,7 +5,7 @@
     {{#if logged_in}}
     <div class="strain-info">
         <div class="strain-img">
-        <img src="{{strain.img}}" alt="{{strain.strain_name}}">
+            <img src="{{strain.img}}" alt="{{strain.strain_name}}">
         </div>
         <div class="strain-text">
             <p>THC Level: {{strain.thc_level}}</p>
@@ -14,17 +14,42 @@
             <p>Effect: {{strain.effect.effect_name}}</p>
             <p>Aroma: {{strain.aroma.aroma_name}}</p>
         </div>
-        </div>
-        <div class="text">
-            <p>{{strain.description}}</p>
-        </div>
-        <div class="review">
-            {{#each strain.user_strains}}
-            <p>{{review.comment}}</p>
-            <p>{{review.rating}}</p>
-            {{/each}}
+    </div>
+    <div class="text">
+        <p>{{strain.description}}</p>
+    </div>
+    <div class="review">
+        {{#each strain.user_strains}}
+        <p>{{review.comment}}</p>
+        <p>{{review.rating}}</p>
+        {{/each}}
 
-            <a href="/api/reviews/create">Leave a Review</a>
+        {{!-- <a href="/api/reviews/create">Leave a Review</a> --}}
+    </div>
+</section>
+<div>
+        <div class="row forms">
+            <div class="col-md-6">
+                <h2>Leave a Review</h2>
+
+                <form class="form review-form">
+                    <div class="form-group">
+                        <h3>Strain: {{strain.strain_name}}</h3>
+                    </div>
+                    <div class="form-group">
+                        <label for="strain-rating">Rating</label>
+                        <input class="form-input" type="text" id="rating" />
+                    </div>
+                    <div class="form-group">
+                        <label for="strain-comment">Comment</label>
+                        <input class="form-input" type="text" id="comment" />
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" type="submit">Submit Review</button>
+                    </div>
+                </form>
+            </div>
+
+            <script src="/js/add-review.js"></script>
         </div>
         {{/if}}
-</section>
