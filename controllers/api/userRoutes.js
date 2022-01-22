@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Aroma, Effect, Review, Strain, StrainType, Usage, User } = require('../../models');
+const { User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // user GET - http://localhost:3001/api/users/

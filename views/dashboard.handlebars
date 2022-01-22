@@ -2,9 +2,8 @@
 <section class="container">
     {{#if strains.length}}
     {{#each strains as |strain|}}
-    {{!-- {{> post-info post }} --}}
     <section class="card">
-        <a href="/api/strains/{{id}}">
+        <a href="/strains/{{id}}">
             <header>{{strain_name}}</header>
             <div class="card-body"></div>
             <img src="{{img}}" alt="{{strain_name}}">
