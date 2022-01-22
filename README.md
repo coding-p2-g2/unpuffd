@@ -12,54 +12,19 @@
   * [Usage](#usage)
   * [License](#license)
   * [Installation](#installation)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
   * [Questions](#questions)
 
 ## Technologies Used
-
  * Sequelize
-
  * Heroku
-
  * Nodemon
-
  * .env
-
  * MySql
-
  * Handlebars
-
  * bcrypt
-
  * express.js
-
  * express-sessions
 
-
-
-* The database models have the following fields and association:
-    
-    * 'User'
-
-        * 'id': Primary key
-
-        * 'strain'
-
-        * 'review'
-
-        * 'Aroma'
-
-        * 'Effect'
-
-        * 'Usage'
-
-        * 'strain type'
-
-    * If a user is deleted, all associated comments will be deleted.
-
-
-  
   <br />
 
   ##Screenshots:
@@ -99,7 +64,7 @@
    ## Installation
   [Link to Deployed Application](https://unpuffd.herokuapp.com/)
 
-  ## Contributing:
+  ## Questions:
   
   * Brianna Woodruff - https://github.com/briannawoodruff 
 
@@ -110,8 +75,4 @@
   * Brandon Williams - https://github.com/brandonawilliams1
 
 
-  <br />
-
-  ## Tests:
-  N/A
   <br />
