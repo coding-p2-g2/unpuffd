@@ -165,7 +165,7 @@ form .form-group {
   }
 
   .review-form .comment-input {
-    width: 80%;
+    width: 100%;
     padding: 0.5rem;
     color: #1a1a1a;
     background-color: #ffffff;
@@ -352,12 +352,14 @@ form .form-group {
     margin-bottom:20px;
 }
 
-.rating {
-  font-size: 40px;
+select {
+  font-size: 20px;
+  width: 100%;
+
 }
 
-.clicked {
-  color: rgb(135, 187, 32);
+i{
+  color: #52cb57;;
 }
 
 .strain-body {
@@ -422,6 +424,8 @@ form .form-group {
 .strain-img {
   flex: 3;
   order: 1;
-} */
+} 
+
+}
 
 /* @media(min-width: 1060px) {} */

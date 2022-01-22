@@ -3,7 +3,7 @@ const { Strain } = require('../models');
 const strainData = [
   {
     strain_name: 'Blue Dream',
-    description: "A potent cross between the ever popular classic strains Blueberry and Haze, a slightly sativa-dominant strain shrouded in mystery. With a relatively high THC_level range that averages at a low of 17% and a high of 24%, this dreamy bud has more than just good looks and flavor to bring to the table. The delicious flavors of blueberry and sugar are long lasting and stay in the air and on your tongue long after the smoke has gone. However, because it is super potent it does have extremely beneficial elements for patients who suffer from chronic fatigue, depression, and lack of appetite.",
+    description: "A potent cross between the ever popular classic strains Blueberry and Haze, a slightly sativa-dominant strain shrouded in mystery. With a relatively high THC level range that averages at a low of 17% and a high of 24%, this dreamy bud has more than just good looks and flavor to bring to the table. The delicious flavors of blueberry and sugar are long lasting and stay in the air and on your tongue long after the smoke has gone. However, because it is super potent it does have extremely beneficial elements for patients who suffer from chronic fatigue, depression, and lack of appetite.",
     thc_level:"18%",
     strain_type_id: 3,
     effect_id: 1,
@@ -58,7 +58,7 @@ const strainData = [
   },
   {
     strain_name: 'Purple Kush',
-    description: "Known as Purple Hindu Kush, Purple Kush is a pure indica that sets itself apart from other indica hybrids with its eye-catching colors and pleasant taste. Purple Kush is a cross between two South-Central Asian indica landraces: Hindu Kush, from the mountainous Pakistan-Afghanistan border, and a purple-tinged variety of Afghani. With 100% indica genetics, it provides a slow and relaxing full body stone. Named a Top 10 Kush Strain by High Times magazine in 2016, Purple Kush has THC_level composition ranging from 17% to as much as 27%. the buds also have a standout taste. The initial impression is similar to the odor of Afghani strains, with an earthy, almost sandalwood musk. Closer inspection brings out sweet and fruity notes of grape.",
+    description: "Known as Purple Hindu Kush, Purple Kush is a pure indica that sets itself apart from other indica hybrids with its eye-catching colors and pleasant taste. Purple Kush is a cross between two South-Central Asian indica landraces: Hindu Kush, from the mountainous Pakistan-Afghanistan border, and a purple-tinged variety of Afghani. With 100% indica genetics, it provides a slow and relaxing full body stone. Named a Top 10 Kush Strain by High Times magazine in 2016, Purple Kush has THC level composition ranging from 17% to as much as 27%. the buds also have a standout taste. The initial impression is similar to the odor of Afghani strains, with an earthy, almost sandalwood musk. Closer inspection brings out sweet and fruity notes of grape.",
     thc_level:"27%",
     strain_type_id: 1,
     effect_id: 1,
@@ -80,7 +80,7 @@ const strainData = [
   },
   {
     strain_name: 'Sour Diesel',
-    description: "Sour Diesel, also known as  is a popular sativa marijuana strain made by crossing Chemdawg and Super Skunk. Sour Diesel effects are dreamy, cerebral, fast-acting and energizing. This strain features a pungent flavor profile that smells like diesel. Medical marijuana patients choose Sour Diesel to help relieve symptoms associated with depression, pain, and stress. The effects begin as a surge of cerebral energy, which promotes creativity and a feeling of get-up-and-go. The stimulation and brain-electrifying feelings would get anyone up and moving (the 26% THC_level high does not hurt either). It can help you fight fatigue, get your appetite moving again, combat that pesky migraine, or even help with mood disorders. Due to its energizing abilities, Sour D can help those that suffer from bipolar disorder (manic depression) or PTSD by giving them a boost of positive cerebrality. Cerebralness? Cerebralism. Cerebralation?",
+    description: "Sour Diesel, also known as  is a popular sativa marijuana strain made by crossing Chemdawg and Super Skunk. Sour Diesel effects are dreamy, cerebral, fast-acting and energizing. This strain features a pungent flavor profile that smells like diesel. Medical marijuana patients choose Sour Diesel to help relieve symptoms associated with depression, pain, and stress. The effects begin as a surge of cerebral energy, which promotes creativity and a feeling of get-up-and-go. The stimulation and brain-electrifying feelings would get anyone up and moving (the 26% THC level high does not hurt either). It can help you fight fatigue, get your appetite moving again, combat that pesky migraine, or even help with mood disorders.",
     thc_level:"26%",
     strain_type_id: 2,
     effect_id: 1,
