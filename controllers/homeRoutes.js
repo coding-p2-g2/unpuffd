@@ -1,6 +1,4 @@
 const router = require('express').Router();
-const { Aroma, Effect, Review, Strain, StrainType, Usage, User } = require('../models');
-
 
 router.get('/', (req, res) => {
     if (req.session.logged_in) {

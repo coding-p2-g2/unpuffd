@@ -1,8 +1,8 @@
 const router = require('express').Router();
-const { Aroma, Effect, Review, Strain, StrainType, Usage, User } = require('../../models');
-const withAuth = require('../../utils/auth');
+const { Aroma, Effect, Review, Strain, StrainType, Usage, User } = require('../models');
+const withAuth = require('../utils/auth');
 
-// GET single-post by id - http://localhost:3001/api/strains/1
+// GET single-post by id - http://localhost:3001/strains/1
 router.get('/:id', withAuth, (req, res) => {
     Strain.findOne({
       where: {
