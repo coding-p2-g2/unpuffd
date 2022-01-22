@@ -16,10 +16,12 @@
         </div>
     </div>
     <div class="text">
+        <h2>About {{strain.strain_name}}</h2>
         <p>{{strain.description}}</p>
     </div>
     <div class="review-section">
         <h2>Recent Reviews</h2>
+         <hr>
         {{#each strain.user_strains}}
         <div class="reivew-card">
             <div class="review-header">
@@ -31,18 +33,40 @@
                   <p>Created on {{format_date review.date_created}}</p>
             </div>
             <hr>
-        {{!-- <div class="review">
-        <p>{{review.comment}}</p>
-        <p>{{review.rating}}</p>
-        <p>{{username}}</p>
-        <small class="text-muted">Created on {{format_date review.date_created}}</small>
-        </div> --}}
         {{/each}}
 
         {{!-- <a href="/api/reviews/create">Leave a Review</a> --}}
     </div>
+    <div>
+        <div class="row review-forms">
+            <div>
+                <h2>Leave a Review</h2>
+
+                <form class="form review-form">
+                    <div class="form-group">
+                        <h3>Strain: {{strain.strain_name}}</h3>
+                    </div>
+                    <div class="form-group">
+                        <select id="rating">
+                            <option value="">Select a rating</option>
+                            <option value="5">Excellent</option>
+                            <option value="4">Very Good</option>
+                            <option value="3">Average</option>
+                            <option value="2">Poor</option>
+                            <option value="1">Terrible</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="strain-comment">Comment</label>
+                        <input class="comment-input" placeholder="Your Coment" type="text" id="comment" />
+                    </div>
+                    <div class="form-group">
+                        <button class="review-btn" type="submit">Submit Review</button>
+                    </div>
+                </form>
+            </div>
      </section>
-<div>
+{{!-- <div>
         <div class="row forms">
             <div class="col-md-6">
                 <h2>Leave a Review</h2>
@@ -63,7 +87,7 @@
                         <button class="btn btn-primary" type="submit">Submit Review</button>
                     </div>
                 </form>
-            </div>
+            </div> --}}
 
             <script src="/js/add-review.js"></script>
         </div>
