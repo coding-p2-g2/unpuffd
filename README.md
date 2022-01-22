@@ -62,6 +62,16 @@
   
   <br />
 
+  ##Screenshots:
+  <br>
+  ![erd](https://user-images.githubusercontent.com/31046919/150647963-8ff65914-cd21-4e78-b976-255bbf384d5b.png)
+  <br />
+  <br>
+  ![final-schema](https://user-images.githubusercontent.com/31046919/150648025-b5abcb39-2f55-45b5-8bfe-4420bd1b079e.jpg)
+  <br />
+  <br>
+  ![landing-page-screenshhot](https://user-images.githubusercontent.com/31046919/150648126-5bb4ed50-7900-4f53-be1d-e1b23df05c4e.png)
+  <br />
 
   ## Usage:
   
